@@ -1,4 +1,4 @@
-= gitCloneHelper =
+= gitCloneHelper 
 
 这是本人第一个Chrome插件，感谢link:https://github.com/sxei/chrome-plugin-demo[sxei]
 link:https://github.com/jadezi/github-accelerator[jadezi]，一者是丰富详实的Chrome插件教学
@@ -6,11 +6,11 @@ link:https://github.com/jadezi/github-accelerator[jadezi]，一者是丰富详�
 
 另外我也会对这个插件进行扩展。
 
-==== 使用 ====
+==== 使用 
 本插件使用git克隆后在Chrome扩展中心打开左侧``开发者模式``，选择``加载已解压的扩展程序``，
 选择克隆的地址，既可使用
 
-==== 效果 footnote:[图片如有侵权，立刻更换] ====
+==== 效果 footnote:[图片如有侵权，立刻更换] 
 image::img/file1.png[]
 
 
