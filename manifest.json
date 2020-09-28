@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "gitCloneHelper",
+  "version": "1.0.0",
+  "description": "This is a plug for speeding up git clone operation",
+  "author": "abliger",
+  "icons": {
+    "16": "img/H.png",
+    "48": "img/H.png",
+    "128": "img/H.png"
+  },
+  "browser_action": {
+    "default_title": "本插件自动匹配git网址进行插入渲染"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*"
+      ],
+      "js": [
+        "./js/jquery-1.7.2.min.js","./js/content-scripts.js"
+      ],
+      "run_at": "document_end"
+    }],
+  "permissions": [
+    "*://*/*"
+  ]
+}
