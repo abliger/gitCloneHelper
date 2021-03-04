@@ -10,6 +10,9 @@ link:https://github.com/jadezi/github-accelerator[jadezi]，一者是丰富详�
 本插件使用git克隆后在Chrome扩展中心打开左侧``开发者模式``，选择``加载已解压的扩展程序``，
 选择克隆的地址，既可使用
 
+==== todo
+1. 增加主题选项
+
 ==== 效果 footnote:[图片如有侵权，立刻更换] 
 image::img/file1.png[]
 

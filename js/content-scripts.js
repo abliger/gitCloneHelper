@@ -1,27 +1,20 @@
 (function(){
-    var depth = true;
-    // var depth = false;
+    // var depth = true;
+    var depth = false;
 
-    var location = window.location.href;
-    var mirror_url1 = "https://" + "github.com.cnpmjs.org";
-    var mirror_url2 = "https://" + "hub.fastgit.org";
-    var mirror_url3 = "https://" + "github.wuyanzheshui.workers.dev";
-    var download_url1 = "https://download.fastgit.org";
+    var location = window.location.pathname;
+    var mirror_url1 = "https://github.wuyanzheshui.workers.dev";
+    var mirror_url2 = "https://hub.fastgit.org";
     var str1 = "";
 
     str1 += "git clone ";
     if (depth) {
         str1 += "--depth=1 ";
     }
-    var a = location.split("/");
-    var b = a[5] === "wiki" ? ".wiki" : "";
-    var str2 = "/" + a[3] + "/" + a[4] + b + ".git";
+    var str2 = location + ".git";
     var clone_utl1 = str1 + mirror_url1 + str2;
     var clone_utl2 = str1 + mirror_url2 + str2;
-    var str3 = window.location.pathname;
-    var web_url1 = mirror_url1 + str3;
-    var web_url2 = mirror_url2 + str3;
-    var web_url3 = mirror_url3 + str3;
+
     var info = `
     <div class="user-ment">
     <div class="collapse multi-collapse" id="collapse">
@@ -41,7 +34,6 @@
     $(".copy_me").click(function (){
         $(".hendend").remove()
         str=$(this).next().text();
-        console.log(str);
         $(this).after('<input class="hendend"  value="'+str+'"/>')
         $(this).next("input.hendend:first").select()
         document.execCommand("Copy");
