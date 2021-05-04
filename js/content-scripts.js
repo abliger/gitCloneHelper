@@ -47,7 +47,6 @@
 					let input_dom = document.createElement('input')
 					input_dom.setAttribute('value', value)
 					input_dom.setAttribute('type', 'text')
-					input_dom.hidden = true
 					window.document
 						.getElementsByTagName('body')[0]
 						.appendChild(input_dom)
